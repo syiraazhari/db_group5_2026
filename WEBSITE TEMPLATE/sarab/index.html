@@ -25,40 +25,51 @@
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
-      <!-- ============================================================
-         NAVBAR
-         ============================================================ -->
-      <nav class="navbar navbar-expand-lg" id="nav">
-         <div class="container">
-            <a class="navbar-brand" href="#">
-               <div class="blogo">
-                  <div class="logo">
-    <img src="logo.png" alt="NFC Logo"style="width:120px;height:120px;">
-</div>
-                  <div>
-				  <a class="navbar-brand" href="#">
-</a>
-                     <div class="bsub">Fast Food & Restaurant</div>
-                  </div>
-               </div>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <i class="fas fa-bars" style="color:var(--primary);font-size:1.50rem;"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-               <ul class="navbar-nav mx-auto">
-                  <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-               </ul>
-               <div class="d-flex align-items-center gap-1">
-                  <!-- FIX 1: Search button -->
-                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
-                  <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>Order Now</a>
-               </div>
+     <!-- =========================
+NAVBAR
+========================= -->
+<nav class="navbar navbar-expand-lg" id="nav">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" class="logo-img">
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#hero">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+
+                <a href="#" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+
+                <a href="#menu" class="nav-cta">
+                    Order Now
+                </a>
+
             </div>
-         </div>
-      </nav>
+
+        </div>
+    </div>
+</nav>
       <!-- ============================================================
          FIX 1 � SEARCH OVERLAY POPUP
          ============================================================ -->
@@ -109,132 +120,47 @@
          HERO
          ============================================================ -->
       <section id="hero">
-         <div class="hs hs1"></div>
-         <div class="hs hs2"></div>
-         <div class="hbgtxt">FOOD</div>
-         <div class="container">
-            <div class="row align-items-center g-5" style="min-height:88vh;">
-               <div class="col-lg-6">
-                  <div class="hbadge">
-                     <div class="hbi"><i class="fas fa-star"></i></div>
-                     <span>#1 Rated Fast Food Restaurant in New York</span>
-                  </div>
-                  <h1 class="htitle">Delicious <span class="hl">Fast Food</span><br/>for Every Moment</h1>
-                  <p class="hdesc">Experience bold flavors crafted from premium ingredients. From crispy burgers to gourmet pizzas - every bite is an adventure worth savoring.</p>
-                  <div class="d-flex flex-wrap gap-3 mb-2">
-                     <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>Explore Menu</a>
-                     <!-- FIX 2: Magnific popup video trigger -->
-					 <a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup btn-play popup-youtube">
-						<div class="pico"><i class="fas fa-play"></i></div>
-						<span>Watch Our Story</span>
-					 </a>
-                  </div>
-                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
-                     <div class="hstat"><span class="snum">850<em>+</em></span><small>Happy Customers</small></div>
-                     <div class="sdiv"></div>
-                     <div class="hstat"><span class="snum">120<em>+</em></span><small>Menu Items</small></div>
-                     <div class="sdiv"></div>
-                     <div class="hstat"><span class="snum">15<em>+</em></span><small>Expert Chefs</small></div>
-                     <div class="sdiv"></div>
-                     <div class="hstat"><span class="snum">12<em>yr</em></span><small>Experience</small></div>
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <div style="position:relative;text-align:center;">
-                     <div class="hcircle">
-                        <img src="img/banner-img.jpg" alt="Burger"/>
-                     </div>
-                     <div class="fcard fc1">
-                        <div class="fcoi r"><i class="fas fa-fire"></i></div>
-                        <div><span class="fcnum">Hot Deal</span><span class="fcsm">30% off today</span></div>
-                     </div>
-                     <div class="fcard fc2">
-                        <div class="fcoi y"><i class="fas fa-star"></i></div>
-                        <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ reviews</span></div>
-                     </div>
-                     <div class="fcard fc3">
-                        <div class="fcoi g"><i class="fas fa-clock"></i></div>
-                        <div><span class="fcnum">20 min</span><span class="fcsm">Fast delivery</span></div>
-                     </div>
-                  </div>
-               </div>
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1 class="htitle">
+                    Good Food, Good Mood
+                </h1>
+
+                <p class="hdesc">
+                    Fresh ingredients, authentic flavours and meals prepared
+                    daily for everyone to enjoy.
+                </p>
+
+                <a href="#menu" class="btn-red">
+                    Explore Menu
+                </a>
+
             </div>
-         </div>
-      </section>
-      <!-- MARQUEE -->
-      <div class="mqsec">
-         <div class="mqtrack">
-            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
-         </div>
-      </div>
-      <!-- CATEGORY -->
-      <section id="category">
-         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-               <span class="slbl">What We Offer</span>
-               <h2 class="stitle">Browse by <span>Category</span></h2>
-               <div class="sline"></div>
-               <p class="sdesc mx-auto" style="max-width:480px;">From sizzling burgers to exotic world cuisines - find your favourite in our menu</p>
+
+            <div class="col-lg-6">
+
+                <div class="hero-slider">
+
+                    <img src="img/slider1.jpg" class="active">
+
+                    <img src="img/slider2.jpg">
+
+                    <img src="img/slider3.jpg">
+
+                </div>
+
             </div>
-            <div class="row g-3 justify-content-center">
-               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
-                  <div class="catcard active" data-filter="all">
-                     <img class="catimg" src="img/category/1.jpg" alt=""/>
-                     <div class="catnm">All Items</div>
-                     <div class="catct">99 items</div>
-                  </div>
-               </div>
-               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
-                  <div class="catcard" data-filter="burgers">
-                     <img class="catimg" src="img/category/2.jpg" alt=""/>
-                     <div class="catnm">Burgers</div>
-                     <div class="catct">24 items</div>
-                  </div>
-               </div>
-               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
-                  <div class="catcard" data-filter="pizza">
-                     <img class="catimg" src="img/category/3.jpg" alt=""/>
-                     <div class="catnm">Pizza</div>
-                     <div class="catct">18 items</div>
-                  </div>
-               </div>
-               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
-                  <div class="catcard" data-filter="chicken">
-                     <img class="catimg" src="img/category/4.jpg" alt=""/>
-                     <div class="catnm">Fried Chicken</div>
-                     <div class="catct">15 items</div>
-                  </div>
-               </div>
-               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
-                  <div class="catcard" data-filter="wraps">
-                     <img class="catimg" src="img/category/5.jpg" alt=""/>
-                     <div class="catnm">Wraps</div>
-                     <div class="catct">12 items</div>
-                  </div>
-               </div>
-               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="catcard" data-filter="desserts">
-                     <img class="catimg" src="img/category/6.jpg" alt=""/>
-                     <div class="catnm">Desserts</div>
-                     <div class="catct">20 items</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+
+        </div>
+
+    </div>
+
+</section>
       <!-- ABOUT -->
       <section id="about">
          <div class="container">
@@ -610,86 +536,7 @@
       </div>
 	  
 	  
-      <!-- ============================================================
-         HISTORY � FIX 8 (alternating left/right text)
-         ============================================================ -->
-      <section id="history">
-         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-               <span class="slbl">Our Journey</span>
-               <h2 class="stitle">A History of <span>Restaurant</span></h2>
-               <div class="sline"></div>
-               <p class="sdesc mx-auto" style="max-width:480px;">From humble beginnings to the city's most beloved restaurant - every chapter written with passion.</p>
-            </div>
-            <div class="timeline" data-aos="fade-up">
-               <!-- ODD ? text on LEFT -->
-               <div class="tli">
-                  <div class="tl-left">
-                     <div class="tlyear">2012</div>
-                     <h5>Evolution of Restaurants</h5>
-                     <p>Sarab opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
-                  </div>
-                  <div class="tl-center">
-                     <div class="tldot"></div>
-                  </div>
-                  <div class="tl-right">
-                     <div class="tlyear">2012</div>
-                     <h5>Evolution of Restaurants</h5>
-                     <p>Sarab opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
-                  </div>
-               </div>
-               <!-- EVEN ? text on RIGHT -->
-               <div class="tli">
-                  <div class="tl-left">
-                     <div class="tlyear">2015</div>
-                     <h5>Fine Dining &amp; The Concept</h5>
-                     <p>Expanding the vision - we introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.</p>
-                  </div>
-                  <div class="tl-center">
-                     <div class="tldot"></div>
-                  </div>
-                  <div class="tl-right">
-                     <div class="tlyear">2015</div>
-                     <h5>Fine Dining &amp; The Concept</h5>
-                     <p>Expanding the vision - we introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.</p>
-                  </div>
-               </div>
-               <!-- ODD ? text on LEFT -->
-               <div class="tli">
-                  <div class="tl-left">
-                     <div class="tlyear">2019</div>
-                     <h5>Modern Fast Food Origins</h5>
-                     <p>Launched our signature fast-food line, merging gourmet quality with speed and convenience. Within 6 months we won 3 prestigious culinary awards nationally.</p>
-                  </div>
-                  <div class="tl-center">
-                     <div class="tldot"></div>
-                  </div>
-                  <div class="tl-right">
-                     <div class="tlyear">2019</div>
-                     <h5>Modern Fast Food Origins</h5>
-                     <p>Launched our signature fast-food line, merging gourmet quality with speed and convenience. Within 6 months we won 3 prestigious culinary awards nationally.</p>
-                  </div>
-               </div>
-               <!-- EVEN ? text on RIGHT -->
-               <div class="tli">
-                  <div class="tl-left">
-                     <div class="tlyear">2026</div>
-                     <h5>National Expansion</h5>
-                     <p>Now operating in 8 cities across the US with an online delivery platform handling 10,000+ orders weekly - and growing every single day.</p>
-                  </div>
-                  <div class="tl-center">
-                     <div class="tldot"></div>
-                  </div>
-                  <div class="tl-right">
-                     <div class="tlyear">2026</div>
-                     <h5>National Expansion</h5>
-                     <p>Now operating in 8 cities across the US with an online delivery platform handling 10,000+ orders weekly - and growing every single day.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-	  
+      
       <!-- HOURS -->
       <section id="hours">
          <div class="hrsbg"></div>
@@ -755,151 +602,6 @@
                      <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>Email</span><span class="hrstime" style="font-size:.8rem;">hello@sarabfood.com</span></div>
                   </div>
                </div>
-            </div>
-         </div>
-      </section>
-	  
-	  
-      <!-- TESTIMONIALS -->
-      <section id="testimonials">
-         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-               <span class="slbl">What People Say</span>
-               <h2 class="stitle">Our Customers <span>Feedback</span></h2>
-               <div class="sline"></div>
-            </div>
-            <div class="swiper tesSwiper" data-aos="fade-up">
-               <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <div class="tescard">
-                        <div class="tesq">"</div>
-                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="testxt">Honestly the best burgers I've ever had. The smash burger is incredible - perfectly crispy edges, juicy inside, and those pickles! We come every Friday now.</p>
-                        <div class="tesauth">
-                           <img src="img/testimonial/1.jpg" alt=""/>
-                           <div>
-                              <div class="tesnm">Monica Wilber</div>
-                              <div class="tesrl">Regular Customer</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="tescard">
-                        <div class="tesq">"</div>
-                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="testxt">Ordered delivery and the food arrived hot and fresh in 22 minutes. Portions are generous. Sarab has become my go-to comfort food spot without question.</p>
-                        <div class="tesauth">
-                           <img src="img/testimonial/2.jpg" alt=""/>
-                           <div>
-                              <div class="tesnm">Cameron Fox</div>
-                              <div class="tesrl">Food Blogger</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="tescard">
-                        <div class="tesq">"</div>
-                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="testxt">The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super friendly staff. Highly recommended!</p>
-                        <div class="tesauth">
-                           <img src="img/testimonial/3.jpg" alt=""/>
-                           <div>
-                              <div class="tesnm">Priya Sharma</div>
-                              <div class="tesrl">Food Enthusiast</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="tescard">
-                        <div class="tesq">"</div>
-                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="testxt">Catered our office party of 50 people and everything was flawless. Fresh, delicious, on time and well presented. Nashville chicken was the absolute star!</p>
-                        <div class="tesauth">
-                           <img src="img/testimonial/4.jpg" alt=""/>
-                           <div>
-                              <div class="tesnm">David Park</div>
-                              <div class="tesrl">Corporate Client</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-pagination mt-4" style="position:static;"></div>
-            </div>
-         </div>
-      </section>
-	  
-      <!-- BLOG -->
-      <section id="blog">
-         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-               <span class="slbl">News &amp; Updates</span>
-               <h2 class="stitle">Our Latest <span>Blog</span> Posts</h2>
-               <div class="sline"></div>
-            </div>
-            <div class="row g-4">
-               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-                  <div class="blcard">
-                     <div class="blimg">
-                        <img src="img/blog/1.jpg" alt=""/>
-                        <div class="bldatebdg"><span class="bd">14</span><span class="bm">Mar</span></div>
-                     </div>
-                     <div class="blbody">
-                        <div class="bltag">Food &amp; Health</div>
-                        <div class="bltit"><a href="#">Healthy Fast Food: A Myth or Beautiful Reality</a></div>
-                        <div class="blmeta"><span><i class="fas fa-user"></i>James Writer</span><span><i class="fas fa-comment"></i>24 Comments</span></div>
-                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
-                  <div class="blcard">
-                     <div class="blimg">
-                        <img src="img/blog/2.jpg" alt=""/>
-                        <div class="bldatebdg"><span class="bd">28</span><span class="bm">Feb</span></div>
-                     </div>
-                     <div class="blbody">
-                        <div class="bltag">Food Science</div>
-                        <div class="bltit"><a href="#">Is Fast Food Getting Healthier? Here's What We Found</a></div>
-                        <div class="blmeta"><span><i class="fas fa-user"></i>Sarah Grain</span><span><i class="fas fa-comment"></i>18 Comments</span></div>
-                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
-                  <div class="blcard">
-                     <div class="blimg">
-                        <img src="img/blog/3.jpg" alt=""/>
-                        <div class="bldatebdg"><span class="bd">05</span><span class="bm">Jan</span></div>
-                     </div>
-                     <div class="blbody">
-                        <div class="bltag">Recipes</div>
-                        <div class="bltit"><a href="#">Innovative Hot Chickpeas Flake Crackin' Recipe at Home</a></div>
-                        <div class="blmeta"><span><i class="fas fa-user"></i>Chef Marcus</span><span><i class="fas fa-comment"></i>32 Comments</span></div>
-                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-	  
-      <!-- NEWSLETTER -->
-      <section id="newsletter">
-         <div class="nlbg"></div>
-         <div class="container">
-            <div class="nlw text-center" data-aos="zoom-in">
-               <span class="slbl" style="color:rgba(255,255,255,.7);">Stay Connected</span>
-               <h2 class="mb-3" style="color:#fff;">Subscribe &amp; Get Exclusive <span style="color:var(--secondary);">Deals</span></h2>
-               <p class="mb-4" style="color:rgba(255,255,255,.78);">Get 15% off your first order plus early access to new menu items</p>
-               <div class="nl-form-wrap">
-                  <input class="nlinput" type="email" id="nlEmail" placeholder="Enter your email address..."/>
-                  <button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>Subscribe</button>
-               </div>
-               <p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>No spam, unsubscribe anytime.</p>
             </div>
          </div>
       </section>
