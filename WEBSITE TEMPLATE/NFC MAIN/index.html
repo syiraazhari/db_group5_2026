@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-<!-- TEST -->
-
 <html lang="en">
    <head>
       <meta charset="UTF-8">
@@ -25,14 +23,16 @@
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
-     <!-- =========================
-NAVBAR
-========================= -->
-<nav class="navbar navbar-expand-lg" id="nav">
+      
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
     <div class="container">
 
         <a class="navbar-brand" href="#">
             <img src="logo.png" alt="Logo" class="logo-img">
+            <div class="bsub">Fast Food & Restaurant</div>
         </a>
 
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -70,6 +70,7 @@ NAVBAR
         </div>
     </div>
 </nav>
+      
       <!-- ============================================================
          FIX 1 � SEARCH OVERLAY POPUP
          ============================================================ -->
@@ -120,48 +121,50 @@ NAVBAR
          HERO
          ============================================================ -->
       <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>
+         <div class="hbgtxt">FOOD</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <h1 class="htitle">Taste the <span class="hl">Legend</span><br/>Love the Crunch</h1>
+                  <p class="hdesc">Fresh ingredients, authentic flavours, and a warm atmosphere for every gathering.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>Explore Menu</a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum">850<em>+</em></span><small>Happy Customers</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">120<em>+</em></span><small>Menu Items</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">15<em>+</em></span><small>Expert Chefs</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">12<em>yr</em></span><small>Experience</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                  <div class="food-slider">
+    <div class="food-track">
 
-    <div class="container">
+        <img src="slide1.png">
+        <img src="slide2.png">
+        <img src="slide3.png">
+        <img src="slide4.png">
 
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-
-                <h1 class="htitle">
-                    Good Food, Good Mood
-                </h1>
-
-                <p class="hdesc">
-                    Fresh ingredients, authentic flavours and meals prepared
-                    daily for everyone to enjoy.
-                </p>
-
-                <a href="#menu" class="btn-red">
-                    Explore Menu
-                </a>
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <div class="hero-slider">
-
-                    <img src="slide1.png" class="active">
-
-                    <img src="slide2.png">
-
-                    <img src="slide3.png">
-
-                </div>
-
-            </div>
-
-        </div>
+        <img src="slide1.png">
+        <img src="slide2.png">
+        <img src="slide3.png">
+        <img src="slide4.png">
 
     </div>
-
-</section>
-<!-- MARQUEE -->
+</div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MARQUEE -->
       <div class="mqsec">
          <div class="mqtrack">
             <div class="mqitem"><i class="fas fa-circle"></i>Classic Chicken Burger</div>
@@ -180,6 +183,61 @@ NAVBAR
             <div class="mqitem"><i class="fas fa-circle"></i>Apple Pie</div>
          </div>
       </div>
+      <!-- CATEGORY -->
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What We Offer</span>
+               <h2 class="stitle">Browse by <span>Category</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">From sizzling burgers to exotic world cuisines - find your favourite in our menu</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="catcard active" data-filter="all">
+                     <img class="catimg" src="img/category/1.jpg" alt=""/>
+                     <div class="catnm">All Items</div>
+                     <div class="catct">99 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+                  <div class="catcard" data-filter="burgers">
+                     <img class="catimg" src="img/category/2.jpg" alt=""/>
+                     <div class="catnm">Burgers</div>
+                     <div class="catct">24 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+                  <div class="catcard" data-filter="pizza">
+                     <img class="catimg" src="img/category/3.jpg" alt=""/>
+                     <div class="catnm">Pizza</div>
+                     <div class="catct">18 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="chicken">
+                     <img class="catimg" src="img/category/4.jpg" alt=""/>
+                     <div class="catnm">Fried Chicken</div>
+                     <div class="catct">15 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+                  <div class="catcard" data-filter="wraps">
+                     <img class="catimg" src="img/category/5.jpg" alt=""/>
+                     <div class="catnm">Wraps</div>
+                     <div class="catct">12 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="catcard" data-filter="desserts">
+                     <img class="catimg" src="img/category/6.jpg" alt=""/>
+                     <div class="catnm">Desserts</div>
+                     <div class="catct">20 items</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <!-- ABOUT -->
       <section id="about">
          <div class="container">
@@ -456,34 +514,7 @@ NAVBAR
             </div>
          </div>
       </div>
-      <!-- SPECIAL OFFER -->
-      <section id="special">
-         <div class="spbg"></div>
-         <div class="container" style="position:relative;z-index:2;">
-            <div class="row align-items-center g-5">
-               <div class="col-lg-6" data-aos="fade-right">
-                  <div class="sptag"><i class="fas fa-bolt me-1"></i>Limited Time Offer</div>
-                  <h2 class="sptitle">Get 30% Off<br/>Our Signature<br/><span>Burger</span> Meal</h2>
-                  <p class="spdesc">Don't miss our weekend special - grab our award-winning signature burger combo with loaded fries and a premium shake at an unbeatable price.</p>
-                  <div class="cdwrap">
-                     <div class="cditem"><span class="cdnum" id="cdH">08</span><span class="cdlbl">Hours</span></div>
-                     <div class="cditem"><span class="cdnum" id="cdM">45</span><span class="cdlbl">Minutes</span></div>
-                     <div class="cditem"><span class="cdnum" id="cdS">30</span><span class="cdlbl">Seconds</span></div>
-                  </div>
-                  <a href="#menu" class="btn-red"><i class="fas fa-shopping-cart"></i>Grab the Deal</a>
-               </div>
-               <div class="col-lg-6" data-aos="fade-left">
-                  <div class="spimgw">
-                     <div class="spglow"></div>
-                     <div class="sppbdg"><span class="old">$24.99</span><span class="np">$17.49</span></div>
-                     <img src="img/off-img.jpg" alt="Special Burger"/>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-	  
-	  
+   
       <!-- ============================================================
          GALLERY � FIX 7 (click opens detail popup)
          ============================================================ -->
@@ -553,8 +584,6 @@ NAVBAR
             </div>
          </div>
       </div>
-	  
-	  
       
       <!-- HOURS -->
       <section id="hours">
@@ -602,91 +631,6 @@ NAVBAR
                            <div class="hdot on"></div>
                            <span class="hrstime">11:00 AM - 09:00 PM</span>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3" data-aos="zoom-in">
-                  <div class="hrscta">
-                     <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
-                     <h4>Order Online</h4>
-                     <p>Get hot food delivered in 25 minutes</p>
-                     <a href="#menu" class="btnw">Order Now ?</a>
-                  </div>
-               </div>
-               <div class="col-lg-4" data-aos="fade-left">
-                  <div class="hrscard">
-                     <h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us</h5>
-                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>Address</span><span class="hrstime" style="font-size:.8rem;">42 Flavor Street, NY</span></div>
-                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>Phone</span><span class="hrstime" style="font-size:.8rem;">+1 (800) 123-4567</span></div>
-                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>Email</span><span class="hrstime" style="font-size:.8rem;">hello@sarabfood.com</span></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-	  
-      <!-- ============================================================
-         FIX 6 � CONTACT FORM
-         ============================================================ -->
-      <section id="contact-section">
-         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-               <span class="slbl">Get In Touch</span>
-               <h2 class="stitle">Contact <span>Us</span></h2>
-               <div class="sline"></div>
-               <p class="sdesc mx-auto" style="max-width:480px;">Have a question, feedback, or want to plan a special event? We'd love to hear from you.</p>
-            </div>
-            <div class="row g-4">
-               <div class="col-lg-4" data-aos="fade-right">
-                  <div class="ctdark">
-                     <h4>Let's Talk</h4>
-                     <p class="ctsub">We typically respond within 2 hours during business hours.</p>
-                     <div class="ctitem">
-                        <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="ctinfo"><strong>Address</strong><span>42 Flavor Street, Manhattan,<br/>New York, NY 10001</span></div>
-                     </div>
-                     <div class="ctitem">
-                        <div class="cticon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="ctinfo"><strong>Phone</strong><span>+1 (800) 123-4567</span></div>
-                     </div>
-                     <div class="ctitem">
-                        <div class="cticon"><i class="fas fa-envelope"></i></div>
-                        <div class="ctinfo"><strong>Email</strong><span>hello@sarabfood.com</span></div>
-                     </div>
-                     <div class="ctitem">
-                        <div class="cticon"><i class="fas fa-clock"></i></div>
-                        <div class="ctinfo"><strong>Working Hours</strong><span>Wed - Sun: 9 AM - 11 PM</span></div>
-                     </div>
-                     <div class="ctsocrow">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-8" data-aos="fade-left">
-                  <div class="fcard">
-                     <div class="row g-3">
-                        <div class="col-sm-6"><label class="flbl">Your Name *</label><input type="text" class="fctrl" placeholder="John Doe"/></div>
-                        <div class="col-sm-6"><label class="flbl">Email Address *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
-                        <div class="col-sm-6"><label class="flbl">Phone Number</label><input type="tel" class="fctrl" placeholder="+1 (800) 000-0000"/></div>
-                        <div class="col-sm-6">
-                           <label class="flbl">Subject *</label>
-                           <select class="fctrl">
-                              <option>General Inquiry</option>
-                              <option>Catering &amp; Events</option>
-                              <option>Feedback</option>
-                              <option>Partnership</option>
-                              <option>Media &amp; Press</option>
-                           </select>
-                        </div>
-                        <div class="col-12"><label class="flbl">Message *</label><textarea class="fctrl" rows="5" placeholder="Write your message here..."></textarea></div>
-                        <div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i>Send Message</button></div>
-                     </div>
-                     <div class="sucmsg" id="ctcOk">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Message sent! We'll reply within 2 hours.</p>
                      </div>
                   </div>
                </div>
